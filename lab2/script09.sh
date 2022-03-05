@@ -1,4 +1,3 @@
-
 #!/bin/bash
 val1=6
 if [ $val1 -gt 5 ]
