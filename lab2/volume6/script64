@@ -1,0 +1,7 @@
+#!/bin/bash
+function myfunc {
+read -p "Enter a value: " value
+echo $(( $value + 10 ))
+}
+result=$( myfunc)
+echo "The value is $result"
