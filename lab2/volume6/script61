@@ -1,0 +1,12 @@
+#!/bin/bash
+count=1
+while [ $count -le 3 ]
+do
+myfunc
+count=$(( $count + 1 ))
+done
+echo "This is the end of the loop"
+function myfunc {
+echo "This is an example of using a function"
+}
+echo "End of the script"
