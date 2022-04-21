@@ -1,0 +1,13 @@
+#!/usr/bin/expect -f
+
+proc myfunc { MY_COUNT } {
+set MY_COUNT [expr $MY_COUNT + 1]
+return "$MY_COUNT"
+}
+
+set COUNT 0
+while {$COUNT <= 5} {
+puts "\nCOUNT is currently at $COUNT"
+set COUNT [myfunc $COUNT]
+}
+puts ""

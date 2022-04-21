@@ -1,0 +1,10 @@
+#!/usr/bin/expect -f
+set TOTAL 1
+if { $TOTAL < 5 } {
+puts "\nTOTAL is less than 5\n"
+} elseif { $TOTAL > 5 } {
+puts "\nTOTAL greater than 5\n"
+} else {
+puts "\nTOTAL is equal to 5\n"
+}
+expect eof

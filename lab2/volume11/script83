@@ -1,0 +1,7 @@
+#!/usr/bin/expect -f
+set COUNT 0
+while { $COUNT <= 5 } {
+puts "\nCOUNT is currently at $COUNT"
+set COUNT [ expr $COUNT + 1 ]
+}
+puts ""
