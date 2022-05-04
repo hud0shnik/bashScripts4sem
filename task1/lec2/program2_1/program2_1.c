@@ -1,13 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <conio.h>
 
-void main() {
+int main() {
 
   int * array = NULL;
   unsigned length, i;
   printf("Enter length of array: ");
-  scanf("%d", & length);
+  scanf("%d", &length);
 
   if (length > 0) {
     //При выделении памяти возвращается указатель.
@@ -16,8 +15,9 @@ void main() {
       for (i = 0; i < length; i++) {
         array[i] = i * i;
       }
+      printf("Allocated %lu bytes\n", length * sizeof(*array));
     } else {
-      printf("Error: can't allocate memory");
+      printf("Error: can't allocate memory\n");
     }
   }
 
@@ -25,6 +25,5 @@ void main() {
   if (array != NULL) {
     free(array);
   }
-  getch();
   return 0;
 }

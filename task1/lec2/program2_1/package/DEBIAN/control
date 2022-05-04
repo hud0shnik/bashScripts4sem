@@ -1,0 +1,10 @@
+Package: Program21
+Version: 1.0
+Section: unknown
+Priority: optional
+Depends: libc6
+Architecture: amd64
+Essential: no
+Installed-Size: 20
+Maintainer: Danila Egorov <c4nsero@mail.ru>
+Description: NULL

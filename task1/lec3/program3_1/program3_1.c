@@ -7,6 +7,7 @@ extern int errno;
 int main() {
 
   int sz; //количество прочитанных байт
+  
   //динамический массив размером 100 байт
   char * c = (char * ) calloc(100, sizeof(char));
 
