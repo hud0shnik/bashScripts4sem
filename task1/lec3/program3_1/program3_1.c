@@ -15,7 +15,7 @@ int main() {
   int fd = open("foo.txt", O_RDONLY | O_CREAT);
 
   // выводим на экран значение дескриптора файла
-  printf("fd = %d/n", fd);
+  printf("fd = %d\n", fd);
 
   // выводим на экран значение дескриптора файла
   if (fd == -1) {
